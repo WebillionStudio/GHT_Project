@@ -3,10 +3,10 @@ if(!isset($_SESSION)){session_start();}
 class MSClass{
     private $result;
     // private $hostname = "localhost";
-    private $hostname = "10.10.10.33";
-    private $dbname = "db59143249";
-    private $username = "db59143249";
-    private $password = "59143249";
+    private $hostname = "localhost";
+    private $dbname = "xxxx";
+    private $username = "xxxx";
+    private $password = "xxxx";
     public function __construct($dbname = 'db59143249'){
         $this->result = mysqli_connect($this->hostname, $this->username, $this->password, $this->dbname) or die('Not Connect MYSQL!!!!');
         mysqli_set_charset($this->result,"utf8");
